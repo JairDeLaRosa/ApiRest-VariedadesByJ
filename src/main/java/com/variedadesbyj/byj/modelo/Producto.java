@@ -10,17 +10,25 @@ import java.util.List;
 
 @Entity
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @ToString
-public class Cliente extends Usuario {
+public class Producto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Integer idCliente;
+    Integer idProducto;
 
-    @OneToMany(mappedBy = "cliente")
-    private List<Compra> compras;
+    String nombre;
+    Integer cantidad;
+    boolean costo;
+    String descripcion;
 
-    @OneToMany(mappedBy = "cliente")
+    @OneToMany(mappedBy = "producto")
+    private List<DetalleCompra> detalleCompras;
+
+    @OneToMany(mappedBy = "producto")
+    private List<Imagen> imagenes;
+
+    @OneToMany(mappedBy = "producto")
     private List<Calificacion> calificaciones;
 }

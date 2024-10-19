@@ -1,26 +1,23 @@
 package com.variedadesbyj.byj.modelo;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-
-import java.util.List;
 
 @Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class Cliente extends Usuario {
+public class Carrito {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Integer idCliente;
+    Integer idCarrito;
 
-    @OneToMany(mappedBy = "cliente")
-    private List<Compra> compras;
 
-    @OneToMany(mappedBy = "cliente")
-    private List<Calificacion> calificaciones;
 }

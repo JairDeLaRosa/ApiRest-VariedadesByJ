@@ -7,24 +7,26 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import java.util.List;
-
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class Pedido {
-
+public class DetalleCompra {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Integer idPedido;
+    Integer idDetalleCompra;
 
-    String nombre;
-    double preco;
+    String cantidad;
+    boolean precioUnitario;
 
     @ManyToOne
-    @JoinColumn(name = "clienteId", nullable = false)
+    @JoinColumn(name = "compraId", nullable = false)
     @JsonIgnore
-    private Cliente cliente;
+    private Compra compra;
+
+    @ManyToOne
+    @JoinColumn(name = "productoId", nullable = false)
+    @JsonIgnore
+    private Producto producto;
 }

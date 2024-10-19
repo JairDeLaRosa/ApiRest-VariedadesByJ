@@ -1,26 +1,27 @@
 package com.variedadesbyj.byj.modelo;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import java.util.List;
-
 @Entity
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @ToString
-public class Cliente extends Usuario {
+public class Imagen {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Integer idCliente;
+    Integer idImagen;
 
-    @OneToMany(mappedBy = "cliente")
-    private List<Compra> compras;
+    String url;
 
-    @OneToMany(mappedBy = "cliente")
-    private List<Calificacion> calificaciones;
+    @ManyToOne
+    @JoinColumn(name = "productoId", nullable = false)
+    @JsonIgnore
+    private Producto producto;
+
 }
