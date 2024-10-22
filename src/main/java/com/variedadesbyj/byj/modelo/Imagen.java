@@ -24,4 +24,15 @@ public class Imagen {
     @JsonIgnore
     private Producto producto;
 
+    public Integer getIdImagen() {
+        return idImagen;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public Producto getProducto() {
+        return producto;
+    }
 }

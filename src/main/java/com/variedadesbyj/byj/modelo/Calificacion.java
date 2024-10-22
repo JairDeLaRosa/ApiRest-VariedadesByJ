@@ -26,7 +26,7 @@ public class Calificacion {
     private Producto producto;
 
     @ManyToOne()
-    @JoinColumn(name = "productoId", nullable = false)
+    @JoinColumn(name = "clienteId", nullable = false)
     @JsonIgnore
     private Cliente cliente;
 

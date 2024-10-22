@@ -7,24 +7,25 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import java.util.List;
-
 @Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class Carrito {
+public class CarritoProducto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Integer idCarrito;
+    Integer idCarritoProducto;
+    Integer cantidad;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "clienteId", referencedColumnName = "idCliente")
+    @ManyToOne
+    @JoinColumn(name = "carritoId")
     @JsonIgnore
-    private Cliente cliente;
+    private Carrito carrito;
 
-    @OneToMany(mappedBy = "carrito",cascade = CascadeType.ALL, orphanRemoval = true)
-    List<CarritoProducto> carritoProductos;
+    @ManyToOne
+    @JoinColumn(name = "prductoId")
+    @JsonIgnore
+    private Producto producto;
 
 }

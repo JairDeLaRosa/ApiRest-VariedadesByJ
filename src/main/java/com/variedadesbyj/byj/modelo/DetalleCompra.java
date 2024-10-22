@@ -7,6 +7,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import java.math.BigDecimal;
+
 @Entity
 @Data
 @NoArgsConstructor
@@ -18,7 +20,7 @@ public class DetalleCompra {
     Integer idDetalleCompra;
 
     String cantidad;
-    boolean precioUnitario;
+    BigDecimal precioUnitario;
 
     @ManyToOne
     @JoinColumn(name = "compraId", nullable = false)

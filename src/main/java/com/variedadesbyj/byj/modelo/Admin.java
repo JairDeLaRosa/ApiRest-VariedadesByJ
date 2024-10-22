@@ -27,4 +27,5 @@ public class Admin extends Usuario {
     public void setIdAdmin(Integer idAdmin) {
         this.idAdmin = idAdmin;
     }
+
 }

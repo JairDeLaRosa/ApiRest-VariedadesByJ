@@ -19,8 +19,8 @@ public class ClienteServicio implements IClienteServicio {
 
     @Override
     public Cliente buscarCliente(Integer idCliente) {
-        var Cliente= clienteRepositorio.findById(idCliente);
-        return null;
+
+        return clienteRepositorio.findById(idCliente).orElse(null);
     }
 
     @Override
