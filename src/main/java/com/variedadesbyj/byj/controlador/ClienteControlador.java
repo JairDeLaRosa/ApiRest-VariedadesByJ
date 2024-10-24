@@ -2,10 +2,14 @@ package com.variedadesbyj.byj.controlador;
 
 import com.variedadesbyj.byj.exepciones.RecursoNoEncontrado;
 import com.variedadesbyj.byj.modelo.Cliente;
+import com.variedadesbyj.byj.objets.ClienteResponse;
+import com.variedadesbyj.byj.objets.LoginRequest;
 import com.variedadesbyj.byj.servicio.IClienteServicio;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -20,12 +24,16 @@ public class ClienteControlador {
     private IClienteServicio clienteServicio;
 
     @GetMapping("/clientes")
-    public List<Cliente> optenerEmpleados(){
+    public List<ClienteResponse> optenerEmpleados(){
         return clienteServicio.listarClientes();
     }
+    @PostMapping("/check-cliente")
+    public ResponseEntity<?> optenrClienteByEmailAndPasword(@RequestBody LoginRequest loginRequest){
+        return clienteServicio.buscarPorCorreoYContrasena(loginRequest.getEmail(),loginRequest.getContrasena());
+    }
     @GetMapping("/clientes/{id}")
-    public Cliente optenerCliente(@PathVariable Integer id){
-        Cliente Cliente=clienteServicio.buscarCliente(id);
+    public ClienteResponse optenerCliente(@PathVariable Integer id){
+        var Cliente=clienteServicio.buscarCliente(id);
         if (Cliente==null){
             throw new RecursoNoEncontrado("Cliente no encontrado.");
         }

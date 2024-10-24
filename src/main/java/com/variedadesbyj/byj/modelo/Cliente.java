@@ -20,6 +20,7 @@ public class Cliente extends Usuario {
     String departamento;
     String municipio;
     String direccion;
+    String telefono;
 
 
     @OneToMany(mappedBy = "cliente")
@@ -85,5 +86,13 @@ public class Cliente extends Usuario {
 
     public void setCarrito(Carrito carrito) {
         this.carrito = carrito;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
 }
