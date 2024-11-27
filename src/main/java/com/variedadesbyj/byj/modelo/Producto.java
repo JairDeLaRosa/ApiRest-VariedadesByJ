@@ -1,5 +1,7 @@
 package com.variedadesbyj.byj.modelo;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -19,15 +21,18 @@ public class Producto {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer idProducto;
 
+    @Column(unique = true)
     String nombre;
     Integer cantidad;
     BigDecimal costo;
     String descripcion;
+    BigDecimal costoOferta;
 
     @OneToMany(mappedBy = "producto")
     private List<DetalleCompra> detalleCompras;
 
     @OneToMany(mappedBy = "producto")
+    @JsonManagedReference
     private List<Imagen> imagenes;
 
     @OneToMany(mappedBy = "producto")
@@ -35,6 +40,10 @@ public class Producto {
 
     @OneToMany(mappedBy = "producto")
     private List<CarritoProducto> carritoProductos;
+
+    @ManyToOne
+    @JoinColumn(name = "categoriaId", nullable = false)
+    private Categoria categoria;
 
     public Integer getIdProducto() {
         return idProducto;
@@ -74,5 +83,13 @@ public class Producto {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
+    }
+
+    public BigDecimal getCostoOferta() {
+        return costoOferta;
+    }
+
+    public void setCostoOferta(BigDecimal costoOferta) {
+        this.costoOferta = costoOferta;
     }
 }

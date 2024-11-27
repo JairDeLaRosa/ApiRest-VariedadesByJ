@@ -24,13 +24,9 @@ public class ProductoServicio implements IProductoServicio {
     }
 
     @Override
-    public boolean guardarProcucto(Producto producto) {
-        boolean guaradado=false;
-        if (producto!=null){
+    public Producto guardarProcucto(Producto producto) {
             productoRepositorio.save(producto);
-            guaradado=true;
-        }
-        return guaradado;
+            return productoRepositorio.findByNombre(producto.getNombre());
     }
 
     @Override

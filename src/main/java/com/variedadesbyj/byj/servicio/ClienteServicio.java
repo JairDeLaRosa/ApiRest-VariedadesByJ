@@ -23,7 +23,7 @@ public class ClienteServicio implements IClienteServicio {
         List<Cliente> clientes=clienteRepositorio.findAll();
         List<ClienteResponse> clienteResponses=new ArrayList<>();
         clientes.forEach(cliente -> {
-            ClienteResponse clienteResponse=new ClienteResponse(cliente.getIdCliente(),cliente.getNombre(),cliente.getApellido(),cliente.getEmail(),cliente.getDepartamento(),cliente.getMunicipio(),cliente.getDireccion(),cliente.getTelefono());
+            ClienteResponse clienteResponse=new ClienteResponse(cliente.getIdCliente(),cliente.getNombre(),cliente.getApellido(),cliente.getEmail(),cliente.getDepartamento(),cliente.getMunicipio(),cliente.getDireccion(),cliente.getTelefono(),"cliente");
             clienteResponses.add(clienteResponse);
         });
         return clienteResponses;
@@ -32,7 +32,7 @@ public class ClienteServicio implements IClienteServicio {
     @Override
     public ClienteResponse buscarCliente(Integer idCliente) {
         Cliente cliente=clienteRepositorio.findById(idCliente).orElse(null);
-        ClienteResponse clienteResponse=new ClienteResponse(cliente.getIdCliente(),cliente.getNombre(),cliente.getApellido(),cliente.getEmail(),cliente.getDepartamento(),cliente.getMunicipio(),cliente.getDireccion(),cliente.getTelefono());
+        ClienteResponse clienteResponse=new ClienteResponse(cliente.getIdCliente(),cliente.getNombre(),cliente.getApellido(),cliente.getEmail(),cliente.getDepartamento(),cliente.getMunicipio(),cliente.getDireccion(),cliente.getTelefono(),"cliente");
         return clienteResponse;
     }
 
@@ -41,7 +41,7 @@ public class ClienteServicio implements IClienteServicio {
         Cliente cliente=clienteRepositorio.findByEmail(email);
         if (cliente!=null){
             if (passwordEncoder.matches(contrasena,cliente.getContrasena())){
-                ClienteResponse clienteResponse=new ClienteResponse(cliente.getIdCliente(),cliente.getNombre(),cliente.getApellido(),cliente.getEmail(),cliente.getDepartamento(),cliente.getMunicipio(),cliente.getDireccion(),cliente.getTelefono());
+                ClienteResponse clienteResponse=new ClienteResponse(cliente.getIdCliente(),cliente.getNombre(),cliente.getApellido(),cliente.getEmail(),cliente.getDepartamento(),cliente.getMunicipio(),cliente.getDireccion(),cliente.getTelefono(), "cliente");
                 return new ResponseEntity<>(clienteResponse, HttpStatus.OK);
             }else {
                 return new ResponseEntity<>("Contrasena invalida", HttpStatus.BAD_REQUEST);

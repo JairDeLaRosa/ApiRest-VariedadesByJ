@@ -9,8 +9,9 @@ public class ClienteResponse {
     private String municipio;
     private String direccion;
     private String telefono;
+    private String tipo;
 
-    public ClienteResponse(Integer idCliente, String nombre, String apellido, String email, String departamento, String municipio, String direccion, String telefono) {
+    public ClienteResponse(Integer idCliente, String nombre, String apellido, String email, String departamento, String municipio, String direccion, String telefono,String tipo) {
         this.idCliente = idCliente;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -19,6 +20,7 @@ public class ClienteResponse {
         this.municipio = municipio;
         this.direccion = direccion;
         this.telefono = telefono;
+        this.tipo=tipo;
     }
 
     public Integer getIdCliente() {
@@ -83,5 +85,13 @@ public class ClienteResponse {
 
     public void setTelefono(String telefono) {
         this.telefono = telefono;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 }
