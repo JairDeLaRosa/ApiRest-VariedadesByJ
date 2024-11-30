@@ -14,7 +14,7 @@ public class ControladorCategoria {
     @Autowired
     private ICategoriaServicio categoriaServicio;
 
-    @GetMapping("/categorias")
+        @GetMapping("/categorias")
     public List<Categoria> categorias(){
         return categoriaServicio.listarCategoria();
     }
