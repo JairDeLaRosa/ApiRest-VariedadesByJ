@@ -6,12 +6,19 @@ import com.variedadesbyj.byj.servicio.IAdminServicio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("byj")
 @CrossOrigin(value = "http://localhost:5173")
 public class AdminControlador {
     @Autowired
     private IAdminServicio adminServicio;
+
+    @GetMapping("admin")
+    public List<Admin> listarAdminst(){
+        return adminServicio.listarAdmins();
+    }
 
     @PostMapping("/admin")
     public Boolean guardarAdmin(@RequestBody Admin admin){
@@ -24,4 +31,5 @@ public class AdminControlador {
         }
         return guardado;
     }
+
 }
