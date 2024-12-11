@@ -92,4 +92,12 @@ public class Producto {
     public void setCostoOferta(BigDecimal costoOferta) {
         this.costoOferta = costoOferta;
     }
+
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
+    }
 }
