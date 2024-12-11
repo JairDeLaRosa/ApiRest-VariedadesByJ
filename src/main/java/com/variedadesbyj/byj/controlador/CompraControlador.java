@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("byj")
-@CrossOrigin(value = "http://localhost:5173")
+@CrossOrigin(value = "*")
 public class CompraControlador {
     @Autowired
     private ICompraServicio compraServicio;

@@ -18,7 +18,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("byj")
-@CrossOrigin(value = "http://localhost:5173")
+@CrossOrigin(value = "*")
 public class UsuarioControlador {
     private static final Logger logger = LoggerFactory.getLogger(UsuarioControlador.class);
 
