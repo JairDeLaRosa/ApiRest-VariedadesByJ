@@ -14,7 +14,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("byj")
-@CrossOrigin(value = "*")
 public class DetalleCompraControlador {
     @Autowired
     private IDetalleCompraServicio detalleCompraServicio;

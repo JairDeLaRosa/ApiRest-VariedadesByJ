@@ -9,7 +9,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("byj")
-@CrossOrigin(value = "*")
 public class ProductoControlador {
 
     @Autowired

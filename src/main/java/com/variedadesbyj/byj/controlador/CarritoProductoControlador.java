@@ -13,7 +13,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("byj")
-@CrossOrigin(value = "*")
 public class CarritoProductoControlador {
     @Autowired
     private ICarritoProductoServicio carritoProductoServicio;
