@@ -10,7 +10,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**") // Aplica a todas las rutas de tu API
-                .allowedOrigins("https://variedadesbyj.netlify.app") // Dominio del frontend
+                .allowedOrigins("*") // Dominio del frontend
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // Métodos HTTP permitidos
                 .allowedHeaders("*") // Permitir cualquier cabecera
                 .allowCredentials(true); // Permitir envío de cookies/credenciales
