@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.variedadesbyj.byj.ByjApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.88 s -- in com.variedadesbyj.byj.ByjApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.75 s -- in com.variedadesbyj.byj.ByjApplicationTests

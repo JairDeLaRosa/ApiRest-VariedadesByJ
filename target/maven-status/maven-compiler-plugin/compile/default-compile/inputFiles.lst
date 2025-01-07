@@ -1,59 +1,59 @@
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\ByjApplication.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\controlador\AdminControlador.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\controlador\CalificacionControlador.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\controlador\CarritoControlador.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\controlador\CarritoProductoControlador.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\controlador\CompraControlador.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\controlador\ControladorCategoria.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\controlador\DetalleCompraControlador.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\controlador\ImagenControlador.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\controlador\ProductoControlador.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\controlador\UsuarioControlador.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\exepciones\RecursoNoEncontrado.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\modelo\Admin.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\modelo\Calificacion.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\modelo\Carrito.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\modelo\CarritoProducto.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\modelo\Categoria.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\modelo\Cliente.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\modelo\Compra.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\modelo\DetalleCompra.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\modelo\Imagen.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\modelo\Producto.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\modelo\Usuario.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\objets\AdminResponse.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\objets\ClienteResponse.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\objets\LoginRequest.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\repositorio\AdminRepositorio.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\repositorio\CalificacionRepositorio.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\repositorio\CarritoProductoRepositorio.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\repositorio\CarritoRepositorio.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\repositorio\CategoriaRepositorio.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\repositorio\ClienteRepositorio.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\repositorio\CompraRepositorio.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\repositorio\DetalleCompraRepositorio.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\repositorio\ImagenRepositorio.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\repositorio\ProductoRepositorio.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\SecurityConfig.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\servicio\AdminServicio.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\servicio\CalificacionServicio.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\servicio\CarritoProductoServicio.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\servicio\CarritoServicio.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\servicio\CategoriaServicio.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\servicio\ClienteServicio.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\servicio\CludinaryService.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\servicio\CompraServicio.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\servicio\DetalleCompraServicio.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\servicio\IAdminServicio.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\servicio\ICalificacionServicio.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\servicio\ICarritoProductoServicio.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\servicio\ICarritoServicio.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\servicio\ICategoriaServicio.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\servicio\IClienteServicio.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\servicio\ICompraServicio.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\servicio\IDetalleCompraServicio.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\servicio\IImagenServicio.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\servicio\ImagenServicio.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\servicio\IProductoServicio.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\servicio\ProductoServicio.java
-C:\Users\HP\OneDrive - Universidad del Magdalena\Escritorio\Java\byj\src\main\java\com\variedadesbyj\byj\WebConfig.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\ByjApplication.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\controlador\AdminControlador.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\controlador\CalificacionControlador.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\controlador\CarritoControlador.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\controlador\CarritoProductoControlador.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\controlador\CompraControlador.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\controlador\ControladorCategoria.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\controlador\DetalleCompraControlador.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\controlador\ImagenControlador.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\controlador\ProductoControlador.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\controlador\UsuarioControlador.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\exepciones\RecursoNoEncontrado.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\modelo\Admin.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\modelo\Calificacion.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\modelo\Carrito.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\modelo\CarritoProducto.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\modelo\Categoria.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\modelo\Cliente.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\modelo\Compra.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\modelo\DetalleCompra.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\modelo\Imagen.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\modelo\Producto.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\modelo\Usuario.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\objets\AdminResponse.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\objets\ClienteResponse.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\objets\LoginRequest.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\repositorio\AdminRepositorio.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\repositorio\CalificacionRepositorio.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\repositorio\CarritoProductoRepositorio.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\repositorio\CarritoRepositorio.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\repositorio\CategoriaRepositorio.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\repositorio\ClienteRepositorio.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\repositorio\CompraRepositorio.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\repositorio\DetalleCompraRepositorio.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\repositorio\ImagenRepositorio.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\repositorio\ProductoRepositorio.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\SecurityConfig.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\servicio\AdminServicio.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\servicio\CalificacionServicio.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\servicio\CarritoProductoServicio.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\servicio\CarritoServicio.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\servicio\CategoriaServicio.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\servicio\ClienteServicio.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\servicio\CludinaryService.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\servicio\CompraServicio.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\servicio\DetalleCompraServicio.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\servicio\IAdminServicio.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\servicio\ICalificacionServicio.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\servicio\ICarritoProductoServicio.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\servicio\ICarritoServicio.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\servicio\ICategoriaServicio.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\servicio\IClienteServicio.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\servicio\ICompraServicio.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\servicio\IDetalleCompraServicio.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\servicio\IImagenServicio.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\servicio\ImagenServicio.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\servicio\IProductoServicio.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\servicio\ProductoServicio.java
+C:\Users\yaird\OneDrive\Desktop\Mis proyectos\ApiRest-VariedadesByJ\src\main\java\com\variedadesbyj\byj\WebConfig.java
