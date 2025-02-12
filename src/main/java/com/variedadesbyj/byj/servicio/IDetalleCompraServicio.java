@@ -7,6 +7,7 @@ import java.util.List;
 public interface IDetalleCompraServicio {
     public List<DetalleCompra> listarDetalleCompras();
     public DetalleCompra buscarDetalleCompra(Integer idDetalleCompra);
-    public boolean guardarDetalleCompra(DetalleCompra detalleCompra);
+    public DetalleCompra guardarDetalleCompra(DetalleCompra detalleCompra);
     public boolean eliminarDetalleCompra(DetalleCompra detalleCompra);
+    public boolean eliminarDetalleCompraPorCompraId(Integer compraId);
 }

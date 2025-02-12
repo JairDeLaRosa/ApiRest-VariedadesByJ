@@ -24,13 +24,8 @@ public class DetalleCompraServicio implements IDetalleCompraServicio{
     }
 
     @Override
-    public boolean guardarDetalleCompra(DetalleCompra detalleCompra) {
-        boolean guardado=false;
-        if (detalleCompra!=null){
-            detalleCompraRepositorio.save(detalleCompra);
-            guardado=true;
-        }
-        return guardado;
+    public DetalleCompra guardarDetalleCompra(DetalleCompra detalleCompra) {
+        return detalleCompraRepositorio.save(detalleCompra);
     }
 
     @Override
@@ -41,5 +36,15 @@ public class DetalleCompraServicio implements IDetalleCompraServicio{
             eliminado=true;
         }
         return eliminado;
+    }
+
+    @Override
+    public boolean eliminarDetalleCompraPorCompraId(Integer compraId) {
+        if(compraId!=null){
+            detalleCompraRepositorio.eliminarPorCompraId(compraId);
+            return true;
+        }else {
+            return false;
+        }
     }
 }

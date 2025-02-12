@@ -13,7 +13,7 @@ public class ControladorCategoria {
     @Autowired
     private ICategoriaServicio categoriaServicio;
 
-        @GetMapping("/categorias")
+    @GetMapping("/categorias")
     public List<Categoria> categorias(){
         return categoriaServicio.listarCategoria();
     }
@@ -22,8 +22,17 @@ public class ControladorCategoria {
     public Categoria categorias(@PathVariable String nombre){
         return categoriaServicio.buscarCategoriaByNombre(nombre);
     }
+    @GetMapping("/categoriasPorId/{id}")
+    public Categoria buscarCategorias(@PathVariable Integer id){
+        return categoriaServicio.buscarCategoria(id);
+    }
     @PostMapping("/categoria")
     public Boolean agregarCategoria(@RequestBody Categoria categoria){
         return categoriaServicio.guardarCategoria(categoria);
+    }
+    @DeleteMapping("/categoriaEliminar/{id}")
+    public Boolean eliminar(@PathVariable Integer id){
+        Categoria categoria=categoriaServicio.buscarCategoria(id);
+        return categoriaServicio.eliminarCategoria(categoria);
     }
 }

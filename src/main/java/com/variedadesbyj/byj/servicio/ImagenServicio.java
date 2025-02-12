@@ -18,11 +18,6 @@ public class ImagenServicio implements IImagenServicio{
     }
 
     @Override
-    public Imagen buscarImagen(Integer idImagen) {
-        return imagenRepositorio.findById(idImagen).orElse(null);
-    }
-
-    @Override
     public boolean guardarImagen(Imagen imagen) {
         boolean guardado=false;
         if (imagen!=null){
@@ -33,10 +28,10 @@ public class ImagenServicio implements IImagenServicio{
     }
 
     @Override
-    public boolean eliminarImagen(Imagen imagen) {
+    public boolean eliminarImagen(Integer productoId) {
         boolean eliminado=false;
-        if (imagen!=null){
-            imagenRepositorio.delete(imagen);
+        if (productoId!=null){
+            imagenRepositorio.eliminarPorProductoId(productoId);
             eliminado=true;
         }
         return eliminado;

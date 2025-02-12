@@ -1,5 +1,6 @@
 package com.variedadesbyj.byj.modelo;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
@@ -29,6 +30,7 @@ public class Producto {
     BigDecimal costoOferta;
 
     @OneToMany(mappedBy = "producto")
+    @JsonIgnore
     private List<DetalleCompra> detalleCompras;
 
     @OneToMany(mappedBy = "producto")
@@ -99,5 +101,54 @@ public class Producto {
 
     public void setCategoria(Categoria categoria) {
         this.categoria = categoria;
+    }
+
+    public List<DetalleCompra> getDetalleCompras() {
+        return detalleCompras;
+    }
+
+    public void setDetalleCompras(List<DetalleCompra> detalleCompras) {
+        this.detalleCompras = detalleCompras;
+    }
+
+    public List<Imagen> getImagenes() {
+        return imagenes;
+    }
+
+    public void setImagenes(List<Imagen> imagenes) {
+        this.imagenes = imagenes;
+    }
+
+    public List<Calificacion> getCalificaciones() {
+        return calificaciones;
+    }
+
+    public void setCalificaciones(List<Calificacion> calificaciones) {
+        this.calificaciones = calificaciones;
+    }
+
+    public List<CarritoProducto> getCarritoProductos() {
+        return carritoProductos;
+    }
+
+    public void setCarritoProductos(List<CarritoProducto> carritoProductos) {
+        this.carritoProductos = carritoProductos;
+    }
+
+    @Override
+    public String toString() {
+        return "Producto{" +
+                "idProducto=" + idProducto +
+                ", nombre='" + nombre + '\'' +
+                ", cantidad=" + cantidad +
+                ", costo=" + costo +
+                ", descripcion='" + descripcion + '\'' +
+                ", costoOferta=" + costoOferta +
+                ", detalleCompras=" + detalleCompras +
+                ", imagenes=" + imagenes +
+                ", calificaciones=" + calificaciones +
+                ", carritoProductos=" + carritoProductos +
+                ", categoria=" + categoria +
+                '}';
     }
 }

@@ -12,6 +12,7 @@ public abstract class Usuario {
     @Column(unique = true)
     private String email;
 
+    @JsonIgnore
     private String contrasena;
 
     public String getNombre() {

@@ -28,7 +28,7 @@ public class UsuarioControlador {
     private IAdminServicio adminServicio;
 
     @GetMapping("/clientes")
-    public List<ClienteResponse> optenerEmpleados(){
+    public List<Cliente> optenerEmpleados(){
         return clienteServicio.listarClientes();
     }
     @PostMapping("/check-usuario")
@@ -42,7 +42,7 @@ public class UsuarioControlador {
         }
     }
     @GetMapping("/clientes/{id}")
-    public ClienteResponse optenerCliente(@PathVariable Integer id){
+    public Cliente optenerCliente(@PathVariable Integer id){
         var Cliente=clienteServicio.buscarCliente(id);
         if (Cliente==null){
             throw new RecursoNoEncontrado("Cliente no encontrado.");

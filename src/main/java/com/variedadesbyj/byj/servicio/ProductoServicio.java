@@ -13,6 +13,9 @@ public class ProductoServicio implements IProductoServicio {
     @Autowired
     private ProductoRepositorio productoRepositorio;
 
+    @Autowired
+    private CludinaryService cludinaryService;
+
     @Override
     public List<Producto> listarProductos() {
         return productoRepositorio.findAll();

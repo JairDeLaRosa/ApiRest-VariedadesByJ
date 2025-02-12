@@ -19,21 +19,13 @@ public class ClienteServicio implements IClienteServicio {
     private final BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
     @Override
-    public List<ClienteResponse> listarClientes() {
-        List<Cliente> clientes=clienteRepositorio.findAll();
-        List<ClienteResponse> clienteResponses=new ArrayList<>();
-        clientes.forEach(cliente -> {
-            ClienteResponse clienteResponse=new ClienteResponse(cliente.getIdCliente(),cliente.getNombre(),cliente.getApellido(),cliente.getEmail(),cliente.getDepartamento(),cliente.getMunicipio(),cliente.getDireccion(),cliente.getTelefono(),"cliente");
-            clienteResponses.add(clienteResponse);
-        });
-        return clienteResponses;
+    public List<Cliente> listarClientes() {
+        return clienteRepositorio.findAll();
     }
 
     @Override
-    public ClienteResponse buscarCliente(Integer idCliente) {
-        Cliente cliente=clienteRepositorio.findById(idCliente).orElse(null);
-        ClienteResponse clienteResponse=new ClienteResponse(cliente.getIdCliente(),cliente.getNombre(),cliente.getApellido(),cliente.getEmail(),cliente.getDepartamento(),cliente.getMunicipio(),cliente.getDireccion(),cliente.getTelefono(),"cliente");
-        return clienteResponse;
+    public Cliente buscarCliente(Integer idCliente) {
+       return clienteRepositorio.findById(idCliente).orElse(null);
     }
 
     @Override

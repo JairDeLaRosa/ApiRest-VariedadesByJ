@@ -1,5 +1,6 @@
 package com.variedadesbyj.byj.modelo;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -24,11 +25,10 @@ public class DetalleCompra {
 
     @ManyToOne
     @JoinColumn(name = "compraId", nullable = false)
-    @JsonIgnore
+    @JsonBackReference("compra-detalleCompra")
     private Compra compra;
 
     @ManyToOne
     @JoinColumn(name = "productoId", nullable = false)
-    @JsonIgnore
     private Producto producto;
 }

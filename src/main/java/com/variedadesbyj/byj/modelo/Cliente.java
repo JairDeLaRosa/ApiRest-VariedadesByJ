@@ -1,5 +1,6 @@
 package com.variedadesbyj.byj.modelo;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -24,6 +25,7 @@ public class Cliente extends Usuario {
 
 
     @OneToMany(mappedBy = "cliente")
+    @JsonIgnore
     private List<Compra> compras;
 
     @OneToMany(mappedBy = "cliente")
@@ -95,4 +97,6 @@ public class Cliente extends Usuario {
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
+
+
 }

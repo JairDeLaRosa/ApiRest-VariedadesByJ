@@ -23,13 +23,8 @@ public class CompraServicio implements ICompraServicio{
     }
 
     @Override
-    public boolean guardarCompra(Compra compra) {
-        boolean guardado=false;
-        if (compra!=null){
-            compraRepositorio.save(compra);
-            guardado=true;
-        }
-        return guardado;
+    public Compra guardarCompra(Compra compra) {
+        return  compraRepositorio.save(compra);
     }
 
     @Override
